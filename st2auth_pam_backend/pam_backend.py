@@ -1,4 +1,4 @@
-# Licensed to the StackStorm, Inc ('StackStorm') under one or more
+# Licensed to the Coditation, Inc ('Coditation') under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
 # The ASF licenses this file to You under the Apache License, Version 2.0
@@ -26,7 +26,7 @@ from st2auth_pam_backend.pam_ffi import auth as pam_auth
 
 LOG = logging.getLogger(__name__)
 
-PAM_DOCS_LINK = 'https://docs.stackstorm.com/install/deb.html#configure-authentication'
+PAM_DOCS_LINK = 'https://docs.coditation.com/install/deb.html#configure-authentication'
 NON_ROOT_ERROR_MSG = ('When using pam backend, st2auth process needs to run as "root" so it can '
                       'read /etc/shadow file. For more details, please see %s' %
                       (PAM_DOCS_LINK))
