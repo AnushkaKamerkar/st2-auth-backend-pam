@@ -1,6 +1,6 @@
-# PAM authentication plugin for StackStorm Community and Enterprise edition
+# PAM authentication plugin for Coditation Community and Enterprise edition
 
-[![Build Status](https://travis-ci.org/StackStorm/st2-auth-backend-pam.svg?branch=master)](https://travis-ci.org/StackStorm/st2-auth-backend-pam) [![IRC](https://img.shields.io/irc/%23stackstorm.png)](http://webchat.freenode.net/?channels=stackstorm)
+[![Build Status](https://travis-ci.org/Coditation/st2-auth-backend-pam.svg?branch=master)](https://travis-ci.org/Coditation/st2-auth-backend-pam) [![IRC](https://img.shields.io/irc/%coditation.png)](http://webchat.freenode.net/?channels=coditation)
 
 PAM authentication backend allows users to authenticate against the PAM (Pluggable Authentication
 Modules) on the system where ``st2auth`` service is running.
@@ -24,7 +24,7 @@ sudo yum -y install pam-devel
 Install this into the ST2 virtualenv with:
 
 ```bash
-sudo /opt/stackstorm/st2/bin/pip install git+https://github.com/StackStorm/st2-auth-backend-pam.git@master#egg=st2_auth_backend_pam
+sudo /opt/coditation/st2/bin/pip install git+https://github.com/Coditation/st2-auth-backend-pam.git@master#egg=st2_auth_backend_pam
 ```
 
 Edit the file: `/lib/systemd/system/st2auth.service`. Modify it so that the `stauth` service runs as root.
@@ -37,9 +37,9 @@ Edit the file: `/lib/systemd/system/st2auth.service`. Modify it so that the `sta
 
 ### Configuration Example
 
-Please refer to the authentication section in the StackStorm 
-[documentation](http://docs.stackstorm.com) for basic setup concept. The following is an
-example of the auth section in the StackStorm configuration file for the PAM backend.
+Please refer to the authentication section in the Coditation 
+[documentation](http://docs.coditation.com) for basic setup concept. The following is an
+example of the auth section in the Coditation configuration file for the PAM backend.
 
 ```ini
 [auth]
@@ -57,7 +57,7 @@ When utilizing this backend, you will need to authenticate as a non-`root` user.
 
 ## Copyright, License, and Contributors Agreement
 
-Copyright 2015 StackStorm, Inc.
+Copyright 2015 Coditation, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in
 compliance with the License. You may obtain a copy of the License in the [LICENSE](LICENSE) file,
